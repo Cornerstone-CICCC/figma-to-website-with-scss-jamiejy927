@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+  background-color: #fff;
+  color: #000;
+}
+
+.header {
+  width: 100%;
+  position: absolute;
+  top: 47px;
+  left: 0;
+  z-index: 100;
+  padding: 0 100px; 
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: none !important;
+    margin: 0 !important;
+  }
+
+  .logo {
+    display: block;
+    img {
+      width: 186px;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .nav ul {
+    display: flex;
+    list-style: none;
+    gap: 80px;
+
+    li a {
+      text-decoration: none;
+      color: #000;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: 2.88px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+  }
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('../images/bg-sketch.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .hero-content {
+    text-align: center;
+    width: 100%;
+    
+    .hero-illustration {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 942px;
+        max-width: 90%;
+        height: auto;
+      }
+    }
+  }
+
+  .sns-links {
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .scroll-text {
+    position: absolute;
+    right: 100px;
+    bottom: 80px;
+    writing-mode: vertical-rl;
+    font-size: 14px;
+    letter-spacing: 10px;
+    color: #000;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 60px;
+      background-color: #000;
+      margin: 15px auto 0;
+    }
+  }
+}
