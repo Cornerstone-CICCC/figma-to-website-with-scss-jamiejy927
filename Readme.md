@@ -1,3 +1,7 @@
+## Deployed Link
+
+https://figma-to-website-with-scss.netlify.app/
+
 ## OPTIONAL Assignment
 
 The goal of this assignment is to mimic the tasks you would do in a real company setting and to get you familiar with Figma. In a company, if you work as a developer, you will be given a detailed mockup design, ideally in Figma, and you have to replicate that design into an actual website.
